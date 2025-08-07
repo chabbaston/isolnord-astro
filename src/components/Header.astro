@@ -1,0 +1,98 @@
+---
+// Header componen---
+---
+
+<header class="bg-white shadow-sm sticky top-0 z-50">
+  <div class="container mx-auto px-4">
+    <div class="flex items-center justify-between py-4">
+      <!-- Logo -->
+      <div class="flex items-center space-x-3">
+        <img src="/logo.png" alt="IsolNord Logo" class="h-12 w-12 md:h-16 md:w-16">
+        <!-- Title hidden on mobile, visible on desktop -->
+        <div class="hidden md:block">
+          <h1 class="text-lg md:text-xl font-bold text-gray-900">IsolNord</h1>
+          <p class="text-xs md:text-sm text-gray-600">Expert Isolation Thermique</p>
+        </div>
+      </div>
+      
+      <!-- Desktop Navigation -->
+      <nav class="hidden lg:flex items-center space-x-4 xl:space-x-6">
+        <a href="/" class="text-gray-700 hover:text-orange-500 font-medium transition text-sm xl:text-base">Accueil</a>
+        <a href="/services" class="text-gray-700 hover:text-orange-500 font-medium transition text-sm xl:text-base">Nos Services</a>
+        <a href="/solutions" class="text-gray-700 hover:text-orange-500 font-medium transition text-sm xl:text-base">Solutions & Matériaux</a>
+        <a href="/realisations" class="text-gray-700 hover:text-orange-500 font-medium transition text-sm xl:text-base">Réalisations</a>
+        <a href="/aides" class="text-gray-700 hover:text-orange-500 font-medium transition text-sm xl:text-base">Aides & Financement</a>
+        <a href="/apropos" class="text-gray-700 hover:text-orange-500 font-medium transition text-sm xl:text-base">À Propos</a>
+        <a href="/contact" class="text-gray-700 hover:text-orange-500 font-medium transition text-sm xl:text-base">Contact</a>
+      </nav>
+      
+      <!-- Contact Info & CTA -->
+      <div class="flex items-center space-x-2 md:space-x-4">
+        <div class="hidden md:flex items-center space-x-2" style="color: #2A528A;">
+          <i class="fas fa-phone text-sm"></i>
+          <span class="font-semibold text-sm">+212 663-150077</span>
+        </div>
+        <button class="cta-button text-white px-3 py-2 md:px-6 md:py-3 rounded-lg font-semibold text-sm md:text-base">
+          <i class="fas fa-calculator mr-1 md:mr-2"></i>
+          <span class="hidden sm:inline">Devis Gratuit</span>
+          <span class="sm:hidden">Devis</span>
+        </button>
+        
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-button" class="lg:hidden p-2 text-gray-700 hover:text-orange-500 transition">
+          <i class="fas fa-bars text-xl"></i>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Mobile Navigation Menu -->
+    <nav id="mobile-menu" class="lg:hidden hidden bg-white border-t border-gray-200 py-4">
+      <div class="flex flex-col space-y-3">
+        <a href="/" class="text-gray-700 hover:text-orange-500 font-medium py-2 px-4 transition">Accueil</a>
+        <a href="/services" class="text-gray-700 hover:text-orange-500 font-medium py-2 px-4 transition">Nos Services</a>
+        <a href="/solutions" class="text-gray-700 hover:text-orange-500 font-medium py-2 px-4 transition">Solutions & Matériaux</a>
+        <a href="/realisations" class="text-gray-700 hover:text-orange-500 font-medium py-2 px-4 transition">Réalisations</a>
+        <a href="/aides" class="text-gray-700 hover:text-orange-500 font-medium py-2 px-4 transition">Aides & Financement</a>
+        <a href="/apropos" class="text-gray-700 hover:text-orange-500 font-medium py-2 px-4 transition">À Propos</a>
+        <a href="/contact" class="text-gray-700 hover:text-orange-500 font-medium py-2 px-4 transition">Contact</a>
+        
+        <!-- Mobile Contact Info -->
+        <div class="flex items-center space-x-2 py-2 px-4 border-t border-gray-200 mt-2" style="color: #2A528A;">
+          <i class="fas fa-phone"></i>
+          <span class="font-semibold">+212 663-150077</span>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<script>
+  // Mobile menu toggle functionality
+  document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = mobileMenuButton?.querySelector('i');
+    
+    if (mobileMenuButton && mobileMenu && menuIcon) {
+      mobileMenuButton.addEventListener('click', function() {
+        mobileMenu.classList.toggle('hidden');
+        
+        // Toggle icon between bars and times
+        if (mobileMenu.classList.contains('hidden')) {
+          menuIcon.className = 'fas fa-bars text-xl';
+        } else {
+          menuIcon.className = 'fas fa-times text-xl';
+        }
+      });
+      
+      // Close menu when clicking on a link
+      const mobileLinks = mobileMenu.querySelectorAll('a');
+      mobileLinks.forEach(link => {
+        link.addEventListener('click', function() {
+          mobileMenu.classList.add('hidden');
+          menuIcon.className = 'fas fa-bars text-xl';
+        });
+      });
+    }
+  });
+</script>

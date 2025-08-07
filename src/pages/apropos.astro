@@ -1,0 +1,325 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="À Propos - IsolNord" description="Découvrez IsolNord, votre expert en isolation thermique et étanchéité basé à Tanger, Maroc. 4 années d'expérience au service de votre confort.">
+  <Header />
+  
+  <!-- Hero Section -->
+  <section class="hero-gradient text-white py-20">
+    <div class="container mx-auto px-4 text-center">
+      <h1 class="text-5xl font-bold mb-6">À Propos d'IsolNord</h1>
+      <p class="text-xl text-blue-100 max-w-3xl mx-auto">
+        Votre expert en isolation thermique et étanchéité basé à Tanger, Maroc. 
+        Une expertise locale au service de votre confort et de vos économies d'énergie.
+      </p>
+    </div>
+  </section>
+
+  <!-- Notre Histoire -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-4xl font-bold text-gray-900 mb-6">Notre Histoire</h2>
+          <div class="section-divider mb-8"></div>
+          <div class="space-y-6">
+            <p class="text-lg text-gray-600 leading-relaxed">
+              Fondée en 2020, <strong>IsolNord</strong> est une société à responsabilité limitée spécialisée dans les travaux d'étanchéité, d'isolation et de construction diverse, basée à Tanger, Maroc.
+            </p>
+            <p class="text-lg text-gray-600 leading-relaxed">
+              Depuis 4 années, nous nous sommes imposés comme un acteur de référence dans le domaine de l'isolation thermique et de l'étanchéité dans la région de Tanger-Tétouan-Al Hoceima.
+            </p>
+            <p class="text-lg text-gray-600 leading-relaxed">
+              Notre mission est d'améliorer le confort thermique et acoustique des bâtiments tout en contribuant aux économies d'énergie et à la protection de l'environnement.
+            </p>
+          </div>
+        </div>
+        <div class="relative">
+          <img src="/images/facade-maison-annees-70-amenagement-saint-gobain-avant-apres-00.jpg" alt="Équipe IsolNord" class="rounded-2xl shadow-2xl w-full">
+          <div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-2xl">
+            <div class="text-center">
+              <div class="stats-counter text-orange-600">4</div>
+              <p class="text-gray-600 font-medium">années d'expertise</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nos Valeurs -->
+  <section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">Nos Valeurs</h2>
+        <div class="section-divider"></div>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Les principes qui guident notre action quotidienne et notre relation avec nos clients
+        </p>
+      </div>
+      
+      <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-8">
+        <div class="bg-white p-8 rounded-2xl shadow-lg text-center">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <i class="fas fa-award text-2xl text-orange-600"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-4">Excellence</h3>
+          <p class="text-gray-600">
+            Nous visons l'excellence dans chaque projet, en utilisant les meilleurs matériaux et techniques.
+          </p>
+        </div>
+        
+        <div class="bg-white p-8 rounded-2xl shadow-lg text-center">
+          <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <i class="fas fa-handshake text-2xl text-blue-600"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-4">Confiance</h3>
+          <p class="text-gray-600">
+            Transparence, honnêteté et respect des engagements sont au cœur de notre relation client.
+          </p>
+        </div>
+        
+        <div class="bg-white p-8 rounded-2xl shadow-lg text-center">
+          <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <i class="fas fa-leaf text-2xl text-green-600"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-4">Durabilité</h3>
+          <p class="text-gray-600">
+            Nous privilégions les solutions durables et respectueuses de l'environnement.
+          </p>
+        </div>
+        
+        <div class="bg-white p-8 rounded-2xl shadow-lg text-center">
+          <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <i class="fas fa-users text-2xl text-purple-600"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-4">Proximité</h3>
+          <p class="text-gray-600">
+            Service de proximité avec une équipe locale qui comprend les spécificités régionales.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Informations Légales -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">Informations Légales</h2>
+        <div class="section-divider"></div>
+      </div>
+      
+      <div class="grid lg:grid-cols-2 gap-8">
+        <div class="bg-gray-50 p-8 rounded-2xl">
+          <h3 class="text-2xl font-bold text-gray-900 mb-6">Identité de l'Entreprise</h3>
+          <div class="space-y-4">
+            <div class="flex justify-between items-center border-b border-gray-200 pb-2">
+              <span class="font-medium text-gray-700">Raison sociale :</span>
+              <span class="text-gray-900">ISOLNORD</span>
+            </div>
+            <div class="flex justify-between items-center border-b border-gray-200 pb-2">
+              <span class="font-medium text-gray-700">Forme juridique :</span>
+              <span class="text-gray-900">SARL</span>
+            </div>
+            <div class="flex justify-between items-center border-b border-gray-200 pb-2">
+              <span class="font-medium text-gray-700">Capital social :</span>
+              <span class="text-gray-900">10 000 DH</span>
+            </div>
+            <div class="flex justify-between items-center border-b border-gray-200 pb-2">
+              <span class="font-medium text-gray-700">RC :</span>
+              <span class="text-gray-900">113529</span>
+            </div>
+            <div class="flex justify-between items-center border-b border-gray-200 pb-2">
+              <span class="font-medium text-gray-700">ICE :</span>
+              <span class="text-gray-900">002754068000073</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="font-medium text-gray-700">Tribunal :</span>
+              <span class="text-gray-900">TANGER</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bg-gray-50 p-8 rounded-2xl">
+          <h3 class="text-2xl font-bold text-gray-900 mb-6">Coordonnées</h3>
+          <div class="space-y-4">
+            <div class="flex items-start space-x-3">
+              <i class="fas fa-map-marker-alt text-orange-500 mt-1"></i>
+              <div>
+                <p class="font-medium text-gray-700">Adresse :</p>
+                <p class="text-gray-900">Avenue Moulay Ismail 14</p>
+                <p class="text-gray-900">Résidence Moulay Ismail</p>
+                <p class="text-gray-900">Étage 3 N°9</p>
+                <p class="text-gray-900">Tanger, Maroc</p>
+              </div>
+            </div>
+            <div class="flex items-center space-x-3">
+              <i class="fas fa-phone text-orange-500"></i>
+              <div>
+                <p class="font-medium text-gray-700">Téléphone :</p>
+                <p class="text-gray-900">+212 663-150077</p>
+              </div>
+            </div>
+            <div class="flex items-center space-x-3">
+              <i class="fas fa-envelope text-orange-500"></i>
+              <div>
+                <p class="font-medium text-gray-700">Email :</p>
+                <p class="text-gray-900">isolnord.maroc@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Notre Expertise -->
+  <section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">Notre Expertise</h2>
+        <div class="section-divider"></div>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Des compétences techniques reconnues et une connaissance approfondie du marché marocain
+        </p>
+      </div>
+      
+      <div class="grid lg:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-2xl shadow-lg">
+          <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+            <i class="fas fa-home text-2xl text-blue-600"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-4">Isolation Thermique</h3>
+          <ul class="space-y-2 text-gray-600">
+            <li>• Isolation par l'extérieur (ITE)</li>
+            <li>• Isolation par l'intérieur (ITI)</li>
+            <li>• Isolation des combles</li>
+            <li>• Isolation des planchers</li>
+          </ul>
+        </div>
+        
+        <div class="bg-white p-8 rounded-2xl shadow-lg">
+          <div class="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center mb-6">
+            <i class="fas fa-volume-off text-2xl text-green-600"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-4">Isolation Acoustique</h3>
+          <ul class="space-y-2 text-gray-600">
+            <li>• Cloisons anti-bruit</li>
+            <li>• Plafonds acoustiques</li>
+            <li>• Traitement phonique</li>
+            <li>• Isolation des bruits d'impact</li>
+          </ul>
+        </div>
+        
+        <div class="bg-white p-8 rounded-2xl shadow-lg">
+          <div class="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center mb-6">
+            <i class="fas fa-umbrella text-2xl text-purple-600"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-4">Étanchéité</h3>
+          <ul class="space-y-2 text-gray-600">
+            <li>• Étanchéité toiture terrasse</li>
+            <li>• Étanchéité de façade</li>
+            <li>• Traitement des joints</li>
+            <li>• Membranes spécialisées</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Zone d'Intervention -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">Zone d'Intervention</h2>
+        <div class="section-divider"></div>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Nous intervenons dans toute la région de Tanger-Tétouan-Al Hoceima
+        </p>
+      </div>
+      
+      <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-6">
+        <div class="bg-gray-50 p-6 rounded-lg text-center">
+          <i class="fas fa-map-marker-alt text-2xl text-orange-500 mb-3"></i>
+          <h3 class="font-bold text-gray-900">Tanger</h3>
+          <p class="text-sm text-gray-600">Ville principale</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg text-center">
+          <i class="fas fa-map-marker-alt text-2xl text-orange-500 mb-3"></i>
+          <h3 class="font-bold text-gray-900">Tétouan</h3>
+          <p class="text-sm text-gray-600">Zone d'intervention</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg text-center">
+          <i class="fas fa-map-marker-alt text-2xl text-orange-500 mb-3"></i>
+          <h3 class="font-bold text-gray-900">Al Hoceima</h3>
+          <p class="text-sm text-gray-600">Zone d'intervention</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg text-center">
+          <i class="fas fa-map-marker-alt text-2xl text-orange-500 mb-3"></i>
+          <h3 class="font-bold text-gray-900">Région Nord</h3>
+          <p class="text-sm text-gray-600">Sur demande</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Engagement Qualité -->
+  <section class="py-20 bg-gradient-to-r from-orange-500 to-blue-600 text-white">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold mb-6">Notre Engagement Qualité</h2>
+      <p class="text-xl mb-8 max-w-2xl mx-auto">
+        Votre satisfaction est notre priorité. Nous nous engageons à vous offrir un service de qualité supérieure.
+      </p>
+      
+      <div class="grid lg:grid-cols-4 gap-8">
+        <div class="bg-white bg-opacity-20 p-6 rounded-lg">
+          <i class="fas fa-shield-alt text-3xl mb-4"></i>
+          <h3 class="text-lg font-bold mb-2">Garantie Travaux</h3>
+          <p class="text-sm">Garantie sur tous nos travaux</p>
+        </div>
+        <div class="bg-white bg-opacity-20 p-6 rounded-lg">
+          <i class="fas fa-clock text-3xl mb-4"></i>
+          <h3 class="text-lg font-bold mb-2">Respect des Délais</h3>
+          <p class="text-sm">Livraison dans les temps convenus</p>
+        </div>
+        <div class="bg-white bg-opacity-20 p-6 rounded-lg">
+          <i class="fas fa-tools text-3xl mb-4"></i>
+          <h3 class="text-lg font-bold mb-2">Matériaux de Qualité</h3>
+          <p class="text-sm">Sélection rigoureuse des matériaux</p>
+        </div>
+        <div class="bg-white bg-opacity-20 p-6 rounded-lg">
+          <i class="fas fa-headset text-3xl mb-4"></i>
+          <h3 class="text-lg font-bold mb-2">Service Client</h3>
+          <p class="text-sm">Accompagnement personnalisé</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold text-gray-900 mb-4">Prêt à Commencer Votre Projet ?</h2>
+      <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+        Contactez-nous dès aujourd'hui pour discuter de votre projet d'isolation ou d'étanchéité
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+        <a href="/contact" class="cta-button text-white px-8 py-4 rounded-lg font-bold text-lg">
+          <i class="fas fa-phone mr-3"></i>
+          Nous Contacter
+        </a>
+        <a href="/realisations" class="border-2 border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white px-8 py-4 rounded-lg font-bold text-lg transition">
+          <i class="fas fa-eye mr-3"></i>
+          Voir Nos Réalisations
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>
+

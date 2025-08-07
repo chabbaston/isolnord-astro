@@ -1,0 +1,307 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Nos Réalisations - IsolNord" description="Découvrez nos projets d'isolation thermique et d'étanchéité réalisés au Maroc. Portfolio de nos chantiers et témoignages clients.">
+  <Header />
+  
+  <!-- Hero Section -->
+  <section class="hero-gradient text-white py-20">
+    <div class="container mx-auto px-4 text-center">
+      <h1 class="text-5xl font-bold mb-6">Nos Réalisations</h1>
+      <p class="text-xl text-blue-100 max-w-3xl mx-auto">
+        Découvrez quelques-unes de nos réalisations au Maroc et les témoignages de nos clients satisfaits
+      </p>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="grid lg:grid-cols-3 gap-8">
+        <!-- Réalisation 1 -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+          <img src="/images/1554913705UT6sytmH6s_ite-isolation-par-l-exterieur-arch-and-home-1100-550l.jpg" alt="Isolation ITE Tanger" class="w-full h-64 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Villa Moderne - Isolation ITE</h3>
+            <p class="text-gray-600 mb-4">Tanger, Maroc</p>
+            <div class="space-y-2 mb-4">
+              <div class="flex justify-between items-center">
+                <span class="text-sm text-gray-600">Surface isolée :</span>
+                <span class="font-semibold">180m²</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-sm text-gray-600">Économies réalisées :</span>
+                <span class="font-semibold text-green-600">65%</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-sm text-gray-600">Matériau :</span>
+                <span class="font-semibold">PSE 140mm</span>
+              </div>
+            </div>
+            <div class="bg-green-50 p-4 rounded-lg">
+              <p class="text-sm text-green-800 italic">
+                "Excellent travail ! Notre maison est maintenant parfaitement isolée. L'équipe IsolNord a été très professionnelle."
+              </p>
+              <p class="text-sm text-green-600 mt-2 font-semibold">- M. et Mme Alami</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Réalisation 2 -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+          <img src="/images/presta-isolation1.jpg" alt="Immeuble résidentiel Tanger" class="w-full h-64 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Immeuble Résidentiel - Isolation Globale</h3>
+            <p class="text-gray-600 mb-4">Tanger, Maroc</p>
+            <div class="space-y-2 mb-4">
+              <div class="flex justify-between items-center">
+                <span class="text-sm text-gray-600">Surface :</span>
+                <span class="font-semibold">800m²</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-sm text-gray-600">Réduction conso :</span>
+                <span class="font-semibold text-green-600">50%</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-sm text-gray-600">Solutions :</span>
+                <span class="font-semibold">ITE + étanchéité</span>
+              </div>
+            </div>
+            <div class="bg-blue-50 p-4 rounded-lg">
+              <p class="text-sm text-blue-800 italic">
+                "Projet mené dans les temps et budget respecté. Très satisfait du résultat et du professionnalisme."
+              </p>
+              <p class="text-sm text-blue-600 mt-2 font-semibold">- Syndic Résidence Al Andalous</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Réalisation 3 -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+          <img src="/images/isolation-thermique-exterieur-ite-murs-colle-fenetre.jpeg" alt="Maison traditionnelle Tanger" class="w-full h-64 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Maison Traditionnelle - Rénovation Complète</h3>
+            <p class="text-gray-600 mb-4">Tanger, Maroc</p>
+            <div class="space-y-2 mb-4">
+              <div class="flex justify-between items-center">
+                <span class="text-sm text-gray-600">Amélioration :</span>
+                <span class="font-semibold text-green-600">Confort optimal</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-sm text-gray-600">Gain thermique :</span>
+                <span class="font-semibold">+5°C hiver, -4°C été</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-sm text-gray-600">Techniques :</span>
+                <span class="font-semibold">ITE + étanchéité toiture</span>
+              </div>
+            </div>
+            <div class="bg-purple-50 p-4 rounded-lg">
+              <p class="text-sm text-purple-800 italic">
+                "Transformation incroyable ! Notre maison ancienne est maintenant ultra-performante. Merci à l'équipe IsolNord."
+              </p>
+              <p class="text-sm text-purple-600 mt-2 font-semibold">- Famille Benali</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Réalisation 4 -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+          <img src="/images/facade-maison-annees-70-amenagement-saint-gobain-avant-apres-00.jpg" alt="Bureau commercial Tanger" class="w-full h-64 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Bureau Commercial - Isolation Acoustique</h3>
+            <p class="text-gray-600 mb-4">Tanger, Maroc</p>
+            <div class="space-y-2 mb-4">
+              <div class="flex justify-between items-center">
+                <span class="text-sm text-gray-600">Surface :</span>
+                <span class="font-semibold">300m²</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-sm text-gray-600">Réduction bruit :</span>
+                <span class="font-semibold text-green-600">-15 dB</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-sm text-gray-600">Matériau :</span>
+                <span class="font-semibold">Laine de roche</span>
+              </div>
+            </div>
+            <div class="bg-yellow-50 p-4 rounded-lg">
+              <p class="text-sm text-yellow-800 italic">
+                "Environnement de travail beaucoup plus calme. Nos employés sont ravis du confort acoustique."
+              </p>
+              <p class="text-sm text-yellow-600 mt-2 font-semibold">- Directeur SARL TangerBusiness</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Réalisation 5 -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+          <img src="/images/Schema-perte-chaleur-isolation.png" alt="Entrepôt industriel" class="w-full h-64 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Entrepôt Industriel - Étanchéité</h3>
+            <p class="text-gray-600 mb-4">Zone Industrielle, Tanger</p>
+            <div class="space-y-2 mb-4">
+              <div class="flex justify-between items-center">
+                <span class="text-sm text-gray-600">Surface toiture :</span>
+                <span class="font-semibold">1200m²</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-sm text-gray-600">Garantie :</span>
+                <span class="font-semibold text-green-600">20 ans</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-sm text-gray-600">Système :</span>
+                <span class="font-semibold">Membrane bitumineuse</span>
+              </div>
+            </div>
+            <div class="bg-cyan-50 p-4 rounded-lg">
+              <p class="text-sm text-cyan-800 italic">
+                "Plus aucun problème d'infiltration depuis les travaux. Travail de qualité avec garantie longue durée."
+              </p>
+              <p class="text-sm text-cyan-600 mt-2 font-semibold">- Gérant Entrepôts du Nord</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Réalisation 6 -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+          <img src="/images/rentabilite-cas-1.jpg" alt="École Tanger" class="w-full h-64 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-2">École Primaire - Isolation Complète</h3>
+            <p class="text-gray-600 mb-4">Tanger, Maroc</p>
+            <div class="space-y-2 mb-4">
+              <div class="flex justify-between items-center">
+                <span class="text-sm text-gray-600">Bâtiments :</span>
+                <span class="font-semibold">3 blocs</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-sm text-gray-600">Économies :</span>
+                <span class="font-semibold text-green-600">60%</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-sm text-gray-600">Solutions :</span>
+                <span class="font-semibold">ITE + ITI + acoustique</span>
+              </div>
+            </div>
+            <div class="bg-red-50 p-4 rounded-lg">
+              <p class="text-sm text-red-800 italic">
+                "Confort thermique et acoustique parfait pour nos élèves. Factures d'énergie considérablement réduites."
+              </p>
+              <p class="text-sm text-red-600 mt-2 font-semibold">- Directrice École Al Manar</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats de performance -->
+  <section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">Nos Résultats en Chiffres</h2>
+        <div class="section-divider"></div>
+      </div>
+      
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div class="text-center">
+          <div class="stats-counter text-blue-600">150+</div>
+          <p class="text-gray-600 font-medium">Chantiers Réalisés</p>
+        </div>
+        <div class="text-center">
+          <div class="stats-counter text-green-600">60%</div>
+          <p class="text-gray-600 font-medium">Économies Moyennes</p>
+        </div>
+        <div class="text-center">
+          <div class="stats-counter text-yellow-600">98%</div>
+          <p class="text-gray-600 font-medium">Clients Satisfaits</p>
+        </div>
+        <div class="text-center">
+          <div class="stats-counter text-purple-600">4</div>
+          <p class="text-gray-600 font-medium">Années d'Expérience</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Processus de Travail -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">Notre Processus de Travail</h2>
+        <div class="section-divider"></div>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Une méthode éprouvée pour garantir la qualité et la satisfaction de nos clients
+        </p>
+      </div>
+      
+      <div class="grid lg:grid-cols-5 gap-8">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-phone text-2xl text-orange-600"></i>
+          </div>
+          <h3 class="text-lg font-bold text-gray-900 mb-2">1. Contact</h3>
+          <p class="text-gray-600">Prise de contact et écoute de vos besoins</p>
+        </div>
+        
+        <div class="text-center">
+          <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-search text-2xl text-blue-600"></i>
+          </div>
+          <h3 class="text-lg font-bold text-gray-900 mb-2">2. Diagnostic</h3>
+          <p class="text-gray-600">Visite technique et analyse thermique</p>
+        </div>
+        
+        <div class="text-center">
+          <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-file-alt text-2xl text-green-600"></i>
+          </div>
+          <h3 class="text-lg font-bold text-gray-900 mb-2">3. Devis</h3>
+          <p class="text-gray-600">Proposition détaillée sous 48h</p>
+        </div>
+        
+        <div class="text-center">
+          <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-tools text-2xl text-purple-600"></i>
+          </div>
+          <h3 class="text-lg font-bold text-gray-900 mb-2">4. Réalisation</h3>
+          <p class="text-gray-600">Travaux par équipes qualifiées</p>
+        </div>
+        
+        <div class="text-center">
+          <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-check-circle text-2xl text-yellow-600"></i>
+          </div>
+          <h3 class="text-lg font-bold text-gray-900 mb-2">5. Suivi</h3>
+          <p class="text-gray-600">Contrôle qualité et garanties</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold text-gray-900 mb-4">Votre Projet Nous Intéresse !</h2>
+      <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+        Rejoignez nos clients satisfaits et bénéficiez de notre expertise en isolation et étanchéité
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+        <a href="/contact" class="cta-button text-white px-8 py-4 rounded-lg font-bold text-lg">
+          <i class="fas fa-calculator mr-3"></i>
+          Demander un Devis
+        </a>
+        <a href="/services" class="border-2 border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white px-8 py-4 rounded-lg font-bold text-lg transition">
+          <i class="fas fa-eye mr-3"></i>
+          Voir Nos Services
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>
+

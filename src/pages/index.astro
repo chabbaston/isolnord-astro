@@ -1,0 +1,188 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="IsolNord - Expert en Isolation Thermique, Acoustique et Étanchéité">
+  <Header />
+  
+  <!-- Hero Section -->
+  <section class="hero-gradient text-white py-12 md:py-20">
+    <div class="container mx-auto px-4">
+      <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+        <!-- Left Column -->
+        <div class="space-y-6 md:space-y-8">
+          <div class="space-y-4">
+            <div class="flex flex-wrap items-center gap-2 mb-4">
+              <span class="certification-badge">
+                <i class="fas fa-certificate mr-2"></i>Certifié RGE
+              </span>
+              <span class="certification-badge bg-yellow-500">
+                <i class="fas fa-award mr-2"></i>Qualibat
+              </span>
+            </div>
+            
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
+              Expert en Isolation Thermique, Acoustique et 
+              <span class="text-yellow-300">Étanchéité</span>
+            </h1>
+            
+            <p class="text-lg sm:text-xl text-blue-100 leading-relaxed">
+              Réduisez vos factures d'énergie jusqu'à <span class="font-bold text-yellow-300">70%</span> • 
+              Confort optimal été comme hiver • 
+              <span class="font-bold">Certifié RGE & QUALIBAT</span>
+            </p>
+          </div>
+          
+          <!-- Key Points -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
+            <div class="flex items-center space-x-3">
+              <div class="w-6 h-6 bg-green-400 rounded-full flex items-center justify-center flex-shrink-0">
+                <i class="fas fa-check text-sm text-green-900"></i>
+              </div>
+              <span class="font-semibold text-sm sm:text-base">4 ans d'expérience</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <div class="w-6 h-6 bg-green-400 rounded-full flex items-center justify-center flex-shrink-0">
+                <i class="fas fa-check text-sm text-green-900"></i>
+              </div>
+              <span class="font-semibold text-sm sm:text-base">Garantie décennale</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <div class="w-6 h-6 bg-green-400 rounded-full flex items-center justify-center flex-shrink-0">
+                <i class="fas fa-check text-sm text-green-900"></i>
+              </div>
+              <span class="font-semibold text-sm sm:text-base">Nombreux chantiers réalisés</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <div class="w-6 h-6 bg-green-400 rounded-full flex items-center justify-center flex-shrink-0">
+                <i class="fas fa-check text-sm text-green-900"></i>
+              </div>
+              <span class="font-semibold text-sm sm:text-base">Devis gratuit 48h</span>
+            </div>
+          </div>
+          
+          <!-- Action Buttons -->
+          <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6">
+            <a href="/contact" class="bg-yellow-500 hover:bg-yellow-400 text-blue-900 px-8 py-4 rounded-lg font-bold text-lg transition transform hover:scale-105 text-center">
+              <i class="fas fa-calculator mr-3"></i>
+              Devis Gratuit en 48h
+            </a>
+            <a href="/services" class="border-2 border-white text-white hover:bg-white hover:text-blue-900 px-8 py-4 rounded-lg font-bold text-lg transition text-center">
+              <i class="fas fa-play mr-3"></i>
+              Découvrir nos Solutions
+            </a>
+          </div>
+        </div>
+        
+        <!-- Right Column - Hero Image -->
+        <div class="relative">
+          <img src="/images/facade-maison-annees-70-amenagement-saint-gobain-avant-apres-00.jpg" alt="Isolation thermique par l'extérieur" class="rounded-2xl shadow-2xl w-full">
+          
+          <!-- Floating Stats Card -->
+          <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-2xl">
+            <div class="text-center">
+              <div class="stats-counter">70%</div>
+              <p class="text-gray-600 font-medium">d'économies d'énergie</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Présentation Concise -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">Pourquoi Choisir IsolNord ?</h2>
+        <div class="section-divider"></div>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Une expertise reconnue, des certifications de qualité et un accompagnement personnalisé pour la réussite de vos projets
+        </p>
+      </div>
+      
+      <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-8">
+        <!-- Expertise & Certifications -->
+        <div class="service-card bg-white p-8 rounded-2xl shadow-lg text-center">
+          <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <i class="fas fa-certificate text-2xl text-blue-600"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-4">Expertise & Certifications</h3>
+          <div class="space-y-2">
+            <p class="text-sm text-gray-600">✓ Certifié RGE</p>
+            <p class="text-sm text-gray-600">✓ Qualibat certification</p>
+            <p class="text-sm text-gray-600">✓ Garantie décennale</p>
+            <p class="text-sm text-gray-600">✓ Formation continue</p>
+          </div>
+        </div>
+        
+        <!-- Accompagnement -->
+        <div class="service-card bg-white p-8 rounded-2xl shadow-lg text-center">
+          <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <i class="fas fa-handshake text-2xl text-green-600"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-4">Accompagnement Personnalisé</h3>
+          <div class="space-y-2">
+            <p class="text-sm text-gray-600">✓ Conseiller dédié</p>
+            <p class="text-sm text-gray-600">✓ Visite technique gratuite</p>
+            <p class="text-sm text-gray-600">✓ Devis détaillé 48h</p>
+            <p class="text-sm text-gray-600">✓ Suivi chantier 7j/7</p>
+          </div>
+        </div>
+        
+        <!-- Solutions Financières -->
+        <div class="service-card bg-white p-8 rounded-2xl shadow-lg text-center">
+          <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <i class="fas fa-coins text-2xl text-yellow-600"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-4">Solutions Financières</h3>
+          <div class="space-y-2">
+            <p class="text-sm text-gray-600">✓ Montage dossiers aides</p>
+            <p class="text-sm text-gray-600">✓ Jusqu'à 90% d'aides</p>
+            <p class="text-sm text-gray-600">✓ Facilités paiement</p>
+            <p class="text-sm text-gray-600">✓ Financement 0%</p>
+          </div>
+        </div>
+        
+        <!-- Performance -->
+        <div class="service-card bg-white p-8 rounded-2xl shadow-lg text-center">
+          <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <i class="fas fa-chart-line text-2xl text-purple-600"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-4">Résultats Prouvés</h3>
+          <div class="space-y-2">
+            <p class="text-sm text-gray-600">✓ 4 ans d'expérience</p>
+            <p class="text-sm text-gray-600">✓ Nombreux chantiers</p>
+            <p class="text-sm text-gray-600">✓ Clients satisfaits</p>
+            <p class="text-sm text-gray-600">✓ Économies garanties</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold text-gray-900 mb-4">Prêt à Améliorer Votre Confort ?</h2>
+      <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+        Découvrez nos solutions d'isolation et obtenez votre devis personnalisé gratuit en 48h
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+        <a href="/contact" class="cta-button text-white px-8 py-4 rounded-lg font-bold text-lg">
+          <i class="fas fa-calculator mr-3"></i>
+          Demander un Devis Gratuit
+        </a>
+        <a href="/services" class="border-2 border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white px-8 py-4 rounded-lg font-bold text-lg transition">
+          <i class="fas fa-eye mr-3"></i>
+          Voir Nos Services
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>
+

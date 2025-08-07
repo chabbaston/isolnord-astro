@@ -1,0 +1,261 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Nos Services - IsolNord" description="Découvrez nos services d'isolation thermique par l'extérieur (ITE), isolation thermique par l'intérieur (ITI), isolation acoustique et étanchéité.">
+  <Header />
+  
+  <!-- Hero Section -->
+  <section class="hero-gradient text-white py-20">
+    <div class="container mx-auto px-4 text-center">
+      <h1 class="text-5xl font-bold mb-6">Nos Solutions d'Isolation</h1>
+      <p class="text-xl text-blue-100 max-w-3xl mx-auto">
+        Des solutions complètes et performantes pour tous vos besoins d'isolation thermique, acoustique et d'étanchéité
+      </p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
+        <!-- Isolation Thermique par l'Extérieur -->
+        <div class="service-card bg-white p-8 rounded-2xl shadow-lg">
+          <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+            <i class="fas fa-home text-2xl text-blue-600"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-gray-900 mb-4">Isolation Thermique par l'Extérieur (ITE)</h3>
+          <p class="text-gray-600 mb-6">
+            La solution la plus efficace pour éliminer les ponts thermiques et améliorer drastiquement les performances énergétiques de votre habitat.
+          </p>
+          <div class="space-y-3 mb-6">
+            <div class="flex items-center space-x-3">
+              <i class="fas fa-arrow-down text-green-500"></i>
+              <span class="text-sm">Jusqu'à 30% d'économies d'énergie</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <i class="fas fa-expand-arrows-alt text-blue-500"></i>
+              <span class="text-sm">Pas de réduction de surface habitable</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <i class="fas fa-chart-line text-yellow-500"></i>
+              <span class="text-sm">Valorisation immobilière (+15%)</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <i class="fas fa-volume-mute text-purple-500"></i>
+              <span class="text-sm">Amélioration acoustique</span>
+            </div>
+          </div>
+          <div class="border-t pt-4">
+            <p class="text-sm font-semibold text-gray-700 mb-2">Matériaux proposés :</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-gray-100 px-3 py-1 rounded-full text-xs">Polystyrène expansé</span>
+              <span class="bg-gray-100 px-3 py-1 rounded-full text-xs">Laine de roche</span>
+              <span class="bg-gray-100 px-3 py-1 rounded-full text-xs">Fibres de bois</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Isolation Thermique par l'Intérieur -->
+        <div class="service-card bg-white p-8 rounded-2xl shadow-lg">
+          <div class="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center mb-6">
+            <i class="fas fa-layer-group text-2xl text-green-600"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-gray-900 mb-4">Isolation Thermique par l'Intérieur (ITI)</h3>
+          <p class="text-gray-600 mb-6">
+            Solution adaptée pour les rénovations ciblées et l'amélioration des performances thermiques de l'intérieur.
+          </p>
+          <div class="space-y-3 mb-6">
+            <div class="flex items-center space-x-3">
+              <i class="fas fa-tools text-blue-500"></i>
+              <span class="text-sm">Murs intérieurs</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <i class="fas fa-th-large text-green-500"></i>
+              <span class="text-sm">Cloisons</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <i class="fas fa-warehouse text-yellow-500"></i>
+              <span class="text-sm">Combles aménageables</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <i class="fas fa-arrow-down text-purple-500"></i>
+              <span class="text-sm">Planchers bas</span>
+            </div>
+          </div>
+          <div class="bg-blue-50 p-4 rounded-lg">
+            <p class="text-sm text-blue-800">
+              <i class="fas fa-info-circle mr-2"></i>
+              Idéal pour les rénovations sans modification de façade
+            </p>
+          </div>
+        </div>
+
+        <!-- Isolation Acoustique -->
+        <div class="service-card bg-white p-8 rounded-2xl shadow-lg">
+          <div class="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center mb-6">
+            <i class="fas fa-volume-off text-2xl text-purple-600"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-gray-900 mb-4">Isolation Acoustique</h3>
+          <p class="text-gray-600 mb-6">
+            Réduire les nuisances sonores pour un confort optimal et une meilleure qualité de vie au quotidien.
+          </p>
+          <div class="space-y-3 mb-6">
+            <div class="flex items-center space-x-3">
+              <i class="fas fa-th text-blue-500"></i>
+              <span class="text-sm">Cloisons anti-bruit</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <i class="fas fa-arrow-up text-green-500"></i>
+              <span class="text-sm">Plafonds acoustiques</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <i class="fas fa-square text-yellow-500"></i>
+              <span class="text-sm">Isolation phonique des murs</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <i class="fas fa-shoe-prints text-purple-500"></i>
+              <span class="text-sm">Traitement bruits d'impact</span>
+            </div>
+          </div>
+          <div class="bg-purple-50 p-4 rounded-lg">
+            <p class="text-sm text-purple-800">
+              <i class="fas fa-music mr-2"></i>
+              Parfait pour bureaux, écoles et habitations
+            </p>
+          </div>
+        </div>
+
+        <!-- Étanchéité -->
+        <div class="service-card bg-white p-8 rounded-2xl shadow-lg">
+          <div class="w-16 h-16 bg-cyan-100 rounded-xl flex items-center justify-center mb-6">
+            <i class="fas fa-umbrella text-2xl text-cyan-600"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-gray-900 mb-4">Produits d'Étanchéité</h3>
+          <p class="text-gray-600 mb-6">
+            Protection durable contre l'humidité et les infiltrations pour préserver votre patrimoine immobilier.
+          </p>
+          <div class="space-y-3 mb-6">
+            <div class="flex items-center space-x-3">
+              <i class="fas fa-building text-blue-500"></i>
+              <span class="text-sm">Étanchéité toiture terrasse</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <i class="fas fa-home text-green-500"></i>
+              <span class="text-sm">Étanchéité de façade</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <i class="fas fa-link text-yellow-500"></i>
+              <span class="text-sm">Traitement des joints</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <i class="fas fa-layer-group text-purple-500"></i>
+              <span class="text-sm">Membranes spécialisées</span>
+            </div>
+          </div>
+          <div class="bg-cyan-50 p-4 rounded-lg">
+            <p class="text-sm text-cyan-800">
+              <i class="fas fa-shield-alt mr-2"></i>
+              Garantie étanchéité longue durée
+            </p>
+          </div>
+        </div>
+
+        <!-- Solutions Globales -->
+        <div class="service-card bg-white p-8 rounded-2xl shadow-lg">
+          <div class="w-16 h-16 bg-yellow-100 rounded-xl flex items-center justify-center mb-6">
+            <i class="fas fa-cogs text-2xl text-yellow-600"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-gray-900 mb-4">Solutions Globales de Rénovation</h3>
+          <p class="text-gray-600 mb-6">
+            Approche complète pour une efficacité maximale et des performances énergétiques optimales.
+          </p>
+          <div class="space-y-3 mb-6">
+            <div class="flex items-center space-x-3">
+              <i class="fas fa-search text-blue-500"></i>
+              <span class="text-sm">Audit énergétique complet</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <i class="fas fa-thermometer-half text-green-500"></i>
+              <span class="text-sm">Isolation thermique complète</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <i class="fas fa-wind text-yellow-500"></i>
+              <span class="text-sm">Ventilation VMC</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <i class="fas fa-paint-roller text-purple-500"></i>
+              <span class="text-sm">Ravalement de façade</span>
+            </div>
+          </div>
+          <div class="bg-yellow-50 p-4 rounded-lg">
+            <p class="text-sm text-yellow-800">
+              <i class="fas fa-star mr-2"></i>
+              Jusqu'à 90% d'aides financières
+            </p>
+          </div>
+        </div>
+
+        <!-- Support & Conseil -->
+        <div class="service-card bg-white p-8 rounded-2xl shadow-lg">
+          <div class="w-16 h-16 bg-red-100 rounded-xl flex items-center justify-center mb-6">
+            <i class="fas fa-headset text-2xl text-red-600"></i>
+          </div>
+          <h3 class="text-2xl font-bold text-gray-900 mb-4">Accompagnement & Conseil</h3>
+          <p class="text-gray-600 mb-6">
+            Un accompagnement personnalisé de A à Z pour la réussite de votre projet d'isolation.
+          </p>
+          <div class="space-y-3 mb-6">
+            <div class="flex items-center space-x-3">
+              <i class="fas fa-user-tie text-blue-500"></i>
+              <span class="text-sm">Conseiller dédié</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <i class="fas fa-clipboard-check text-green-500"></i>
+              <span class="text-sm">Visite technique gratuite</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <i class="fas fa-euro-sign text-yellow-500"></i>
+              <span class="text-sm">Montage dossiers aides</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <i class="fas fa-calendar text-purple-500"></i>
+              <span class="text-sm">Suivi chantier 7j/7</span>
+            </div>
+          </div>
+          <div class="bg-red-50 p-4 rounded-lg">
+            <p class="text-sm text-red-800">
+              <i class="fas fa-heart mr-2"></i>
+              Service client de proximité
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold text-gray-900 mb-4">Besoin d'un Conseil Personnalisé ?</h2>
+      <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+        Nos experts vous accompagnent dans le choix de la solution d'isolation la plus adaptée à votre projet
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+        <a href="/contact" class="cta-button text-white px-8 py-4 rounded-lg font-bold text-lg">
+          <i class="fas fa-phone mr-3"></i>
+          Demander un Conseil Gratuit
+        </a>
+        <a href="/solutions" class="border-2 border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white px-8 py-4 rounded-lg font-bold text-lg transition">
+          <i class="fas fa-tools mr-3"></i>
+          Voir Nos Matériaux
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>
+

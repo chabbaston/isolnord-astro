@@ -1,0 +1,229 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, #F58220 0%, #2A528A 50%, #06b6d4 100%);
+}
+
+.service-card {
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  border-color: #F58220;
+  box-shadow: 0 20px 40px rgba(245, 130, 32, 0.1);
+}
+
+.stats-counter {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #2A528A;
+}
+
+.section-divider {
+  height: 4px;
+  background: linear-gradient(90deg, #F58220, #2A528A);
+  border-radius: 2px;
+  width: 60px;
+  margin: 0 auto 2rem;
+}
+
+.material-card {
+  background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
+  border: 1px solid #e2e8f0;
+}
+
+.contact-form input, .contact-form select, .contact-form textarea {
+  border: 2px solid #e5e7eb;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus, .contact-form select:focus, .contact-form textarea:focus {
+  border-color: #F58220;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(245, 130, 32, 0.1);
+}
+
+.cta-button {
+  background: linear-gradient(135deg, #F58220 0%, #d97706 100%);
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(245, 130, 32, 0.3);
+}
+
+.certification-badge {
+  background: linear-gradient(145deg, #10b981 0%, #059669 100%);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+/* Mobile-specific optimizations */
+@media (max-width: 768px) {
+  .stats-counter {
+    font-size: 2rem;
+  }
+  
+  .hero-gradient h1 {
+    font-size: 2.5rem !important;
+    line-height: 1.2;
+  }
+  
+  .hero-gradient h2 {
+    font-size: 1.5rem !important;
+  }
+  
+  .hero-gradient p {
+    font-size: 1rem !important;
+  }
+  
+  .service-card {
+    margin-bottom: 1.5rem;
+  }
+  
+  .material-card {
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Improve touch targets */
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea {
+    min-height: 48px;
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+  
+  /* Better spacing for mobile */
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  /* Mobile-friendly buttons */
+  .cta-button {
+    min-height: 44px;
+    padding: 12px 16px;
+  }
+  
+  /* Enhanced mobile navigation */
+  #mobile-menu {
+    animation: slideDown 0.3s ease-out;
+  }
+  
+  #mobile-menu.hidden {
+    animation: slideUp 0.3s ease-out;
+  }
+  
+  /* Smooth scrolling for mobile */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Better tap highlights */
+  a, button {
+    -webkit-tap-highlight-color: rgba(245, 130, 32, 0.2);
+  }
+  
+  /* Prevent horizontal scroll */
+  body {
+    overflow-x: hidden;
+  }
+  
+  /* Better image loading */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-gradient h1 {
+    font-size: 2rem !important;
+  }
+  
+  .hero-gradient h2 {
+    font-size: 1.25rem !important;
+  }
+  
+  .stats-counter {
+    font-size: 1.75rem;
+  }
+  
+  /* Stack elements vertically on very small screens */
+  .grid {
+    grid-template-columns: 1fr !important;
+    gap: 1rem;
+  }
+  
+  /* Smaller padding for very small screens */
+  .container {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+  
+  /* Adjust section padding */
+  section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+/* Animations for mobile menu */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+/* Loading states for better UX */
+.loading {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+/* Focus states for accessibility */
+button:focus,
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #F58220;
+  outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .service-card,
+  .material-card {
+    border: 2px solid #000;
+  }
+}
+

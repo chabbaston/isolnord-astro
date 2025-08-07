@@ -1,0 +1,282 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Solutions & Matériaux - IsolNord" description="Découvrez nos matériaux d'isolation : PSE, laine de roche, fibre de bois et nos systèmes d'étanchéité pour des performances optimales.">
+  <Header />
+  
+  <!-- Hero Section -->
+  <section class="hero-gradient text-white py-20">
+    <div class="container mx-auto px-4 text-center">
+      <h1 class="text-5xl font-bold mb-6">Technologies & Matériaux</h1>
+      <p class="text-xl text-blue-100 max-w-3xl mx-auto">
+        Nous utilisons uniquement des matériaux de qualité supérieure et les dernières technologies pour des performances optimales
+      </p>
+    </div>
+  </section>
+
+  <!-- Matériaux Isolation Thermique -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">Matériaux d'Isolation Thermique</h2>
+        <div class="section-divider"></div>
+      </div>
+      
+      <div class="grid lg:grid-cols-3 gap-8 mb-16">
+        <!-- Polystyrène Expansé -->
+        <div class="material-card p-6 rounded-2xl shadow-lg">
+          <img src="/images/panneaux-pse.jpg" alt="Polystyrène Expansé PSE" class="w-full h-48 object-cover rounded-lg mb-6">
+          <h4 class="text-xl font-bold text-gray-900 mb-4">Polystyrène Expansé (PSE)</h4>
+          <div class="space-y-3">
+            <div class="flex justify-between items-center">
+              <span class="text-sm text-gray-600">Coefficient R :</span>
+              <span class="font-semibold text-blue-600">3,7 à 4,5 m².K/W</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="text-sm text-gray-600">Épaisseur :</span>
+              <span class="font-semibold">100 à 200mm</span>
+            </div>
+          </div>
+          <div class="mt-4 space-y-2">
+            <p class="text-sm text-gray-700">✓ Économique</p>
+            <p class="text-sm text-gray-700">✓ Performant</p>
+            <p class="text-sm text-gray-700">✓ Durable</p>
+            <p class="text-sm text-gray-700">✓ Léger</p>
+          </div>
+        </div>
+
+        <!-- Laine de Roche -->
+        <div class="material-card p-6 rounded-2xl shadow-lg">
+          <img src="/images/AST3284256M-XL.jpg" alt="Laine de Roche" class="w-full h-48 object-cover rounded-lg mb-6">
+          <h4 class="text-xl font-bold text-gray-900 mb-4">Laine de Roche</h4>
+          <div class="space-y-3">
+            <div class="flex justify-between items-center">
+              <span class="text-sm text-gray-600">Coefficient R :</span>
+              <span class="font-semibold text-blue-600">3,5 à 4,2 m².K/W</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="text-sm text-gray-600">Applications :</span>
+              <span class="font-semibold">Façades, cloisons</span>
+            </div>
+          </div>
+          <div class="mt-4 space-y-2">
+            <p class="text-sm text-gray-700">✓ Incombustible</p>
+            <p class="text-sm text-gray-700">✓ Excellente acoustique</p>
+            <p class="text-sm text-gray-700">✓ Résistant à l'humidité</p>
+            <p class="text-sm text-gray-700">✓ Durable</p>
+          </div>
+        </div>
+
+        <!-- Fibre de Bois -->
+        <div class="material-card p-6 rounded-2xl shadow-lg">
+          <img src="/images/3496254724255-WqsiSyUBDe-fiche.jpg" alt="Fibre de Bois" class="w-full h-48 object-cover rounded-lg mb-6">
+          <h4 class="text-xl font-bold text-gray-900 mb-4">Fibre de Bois</h4>
+          <div class="space-y-3">
+            <div class="flex justify-between items-center">
+              <span class="text-sm text-gray-600">Coefficient R :</span>
+              <span class="font-semibold text-blue-600">3,5 à 4,0 m².K/W</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="text-sm text-gray-600">Origine :</span>
+              <span class="font-semibold text-green-600">100% Écologique</span>
+            </div>
+          </div>
+          <div class="mt-4 space-y-2">
+            <p class="text-sm text-gray-700">✓ Écologique</p>
+            <p class="text-sm text-gray-700">✓ Régulation hygrométrique</p>
+            <p class="text-sm text-gray-700">✓ Confort d'été exceptionnel</p>
+            <p class="text-sm text-gray-700">✓ Respirant</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Comparatif Performance -->
+      <div class="bg-gray-50 p-8 rounded-2xl">
+        <h3 class="text-2xl font-bold text-center text-gray-900 mb-8">Comparatif des Performances</h3>
+        <div class="overflow-x-auto">
+          <table class="w-full bg-white rounded-lg shadow">
+            <thead class="bg-blue-500 text-white">
+              <tr>
+                <th class="p-4 text-left">Matériau</th>
+                <th class="p-4 text-center">Résistance R</th>
+                <th class="p-4 text-center">Épaisseur</th>
+                <th class="p-4 text-center">Prix</th>
+                <th class="p-4 text-center">Durabilité</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+              <tr>
+                <td class="p-4 font-medium">Polystyrène Expansé</td>
+                <td class="p-4 text-center">★★★★★</td>
+                <td class="p-4 text-center">★★★★</td>
+                <td class="p-4 text-center text-green-600">★★★★★</td>
+                <td class="p-4 text-center">★★★★</td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="p-4 font-medium">Laine de Roche</td>
+                <td class="p-4 text-center">★★★★</td>
+                <td class="p-4 text-center">★★★</td>
+                <td class="p-4 text-center text-yellow-600">★★★</td>
+                <td class="p-4 text-center">★★★★★</td>
+              </tr>
+              <tr>
+                <td class="p-4 font-medium">Fibre de Bois</td>
+                <td class="p-4 text-center">★★★★</td>
+                <td class="p-4 text-center">★★</td>
+                <td class="p-4 text-center text-red-600">★★</td>
+                <td class="p-4 text-center">★★★★</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Systèmes d'Étanchéité -->
+  <section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">Systèmes d'Étanchéité</h2>
+        <div class="section-divider"></div>
+      </div>
+      
+      <div class="grid lg:grid-cols-2 gap-8">
+        <!-- Membranes Bitumineuses -->
+        <div class="material-card p-6 rounded-2xl shadow-lg">
+          <div class="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center mb-4">
+            <i class="fas fa-layer-group text-white text-xl"></i>
+          </div>
+          <h4 class="text-xl font-bold text-gray-900 mb-4">Membranes Bitumineuses</h4>
+          <div class="space-y-3">
+            <div class="flex items-center space-x-3">
+              <i class="fas fa-check text-green-500"></i>
+              <span class="text-sm">SBS modifié haute qualité</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <i class="fas fa-check text-green-500"></i>
+              <span class="text-sm">Résistance UV et intempéries</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <i class="fas fa-check text-green-500"></i>
+              <span class="text-sm">Garantie 20 ans</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <i class="fas fa-check text-green-500"></i>
+              <span class="text-sm">Application à chaud</span>
+            </div>
+          </div>
+          <div class="mt-6 bg-gray-50 p-4 rounded-lg">
+            <p class="text-sm text-gray-700 font-medium">
+              Idéal pour toitures terrasses et façades industrielles
+            </p>
+          </div>
+        </div>
+
+        <!-- Étanchéité Liquide -->
+        <div class="material-card p-6 rounded-2xl shadow-lg">
+          <div class="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center mb-4">
+            <i class="fas fa-tint text-white text-xl"></i>
+          </div>
+          <h4 class="text-xl font-bold text-gray-900 mb-4">Étanchéité Liquide</h4>
+          <div class="space-y-3">
+            <div class="flex items-center space-x-3">
+              <i class="fas fa-check text-green-500"></i>
+              <span class="text-sm">Résines polyuréthane</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <i class="fas fa-check text-green-500"></i>
+              <span class="text-sm">Application sans flamme</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <i class="fas fa-check text-green-500"></i>
+              <span class="text-sm">Idéal rénovation</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <i class="fas fa-check text-green-500"></i>
+              <span class="text-sm">Formes complexes</span>
+            </div>
+          </div>
+          <div class="mt-6 bg-blue-50 p-4 rounded-lg">
+            <p class="text-sm text-blue-700 font-medium">
+              Parfait pour balcons, terrasses et toitures atypiques
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Processus de Sélection -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">Comment Choisir le Bon Matériau ?</h2>
+        <div class="section-divider"></div>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Nos experts vous accompagnent dans le choix du matériau le plus adapté à votre projet
+        </p>
+      </div>
+      
+      <div class="grid lg:grid-cols-4 gap-8">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-search text-2xl text-orange-600"></i>
+          </div>
+          <h3 class="text-lg font-bold text-gray-900 mb-2">1. Diagnostic</h3>
+          <p class="text-gray-600">Analyse de votre bâtiment et de vos besoins</p>
+        </div>
+        
+        <div class="text-center">
+          <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-calculator text-2xl text-blue-600"></i>
+          </div>
+          <h3 class="text-lg font-bold text-gray-900 mb-2">2. Calcul</h3>
+          <p class="text-gray-600">Étude thermique et choix des matériaux</p>
+        </div>
+        
+        <div class="text-center">
+          <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-file-alt text-2xl text-green-600"></i>
+          </div>
+          <h3 class="text-lg font-bold text-gray-900 mb-2">3. Devis</h3>
+          <p class="text-gray-600">Proposition détaillée et personnalisée</p>
+        </div>
+        
+        <div class="text-center">
+          <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-tools text-2xl text-purple-600"></i>
+          </div>
+          <h3 class="text-lg font-bold text-gray-900 mb-2">4. Réalisation</h3>
+          <p class="text-gray-600">Mise en œuvre par nos équipes certifiées</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold text-gray-900 mb-4">Besoin d'Aide pour Choisir ?</h2>
+      <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+        Nos experts vous conseillent gratuitement pour sélectionner les matériaux les plus adaptés à votre projet
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+        <a href="/contact" class="cta-button text-white px-8 py-4 rounded-lg font-bold text-lg">
+          <i class="fas fa-user-tie mr-3"></i>
+          Conseil d'Expert Gratuit
+        </a>
+        <a href="/realisations" class="border-2 border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white px-8 py-4 rounded-lg font-bold text-lg transition">
+          <i class="fas fa-eye mr-3"></i>
+          Voir Nos Réalisations
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>
+
