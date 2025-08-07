@@ -11,6 +11,9 @@ export default {
       fontFamily: {
         'sans': ['Inter', 'sans-serif'],
       },
+      inset: {
+        '-2.8': '-0.7rem', // Votre valeur personnalisée
+      },
     },
   },
   plugins: [],
